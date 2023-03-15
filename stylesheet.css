@@ -1,9 +1,8 @@
 header {
     background-image: url(https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82);
-    background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
-
+padding-top: 2vw;
     color: white;
 }
 
@@ -23,7 +22,7 @@ header {
 
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
     header {
-        background: url(https://media2.giphy.com/media/ITRemFlr5tS39AzQUL/200w.gif?cid=82a1493b8qi6ls1srt3qt6medwr9o2qldfw7hhodg3ooxl3n&rid=200w.gif&ct=g);
+        background: url(https://thumbs.dreamstime.com/b/abstract-polygonal-background-modern-wallpaper-cadet-blue-vector-illustration-style-colorful-d-triangles-177062229.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -56,9 +55,9 @@ img {
 }
 
 .intro {
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-left: 30vw;
-    margin-right: 5vw;
+    margin-right: 10vw;
     margin-top: -3vw;
     padding-bottom: 3%;
 }
@@ -137,7 +136,8 @@ footer {
     padding-top: 2vw;
     text-align: center;
     font-size: 1.5vw;
-    padding-bottom: 2vw;
+    padding-bottom: 5vw;
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 350px) and (max-width: 700px) {
@@ -152,6 +152,11 @@ footer {
     }
 }
 
+.msg {
+    padding-left: -2vw;
+    margin-left: 1.5vw;
+}
+
 button {
     font-size: 1vw;
     border: 1px solid white;
@@ -160,7 +165,7 @@ button {
 
 
 button:hover {
-    background-color: cornflowerblue;
+    background-color:darkcyan;
     border: none;
 }
 
@@ -181,11 +186,19 @@ label {
     text-align: right;
 }
 
+.form {
+    margin-top: 3vw;
+    size: 2vw;
+}
+
 .form-flex {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+   margin-bottom: -3vw;
+   grid-template-rows: auto;
+grid-template-columns: 0.5fr 1fr;
 }
 
 .flex-form {
@@ -193,6 +206,9 @@ label {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: -2vw;
+    margin-left: 2vw;
+
 }
 
 .flex {
@@ -201,7 +217,7 @@ label {
     align-items: center;
     justify-content: center;
     padding-top: 1vw;
-
+    padding-right: 2vw;
 }
 
 h2 {
@@ -217,6 +233,7 @@ h3 {
 
 .submission {
 margin-left: 3vw;
+font-size: 1vw;
 }
 
 .Q {
@@ -224,5 +241,40 @@ margin-left: 3vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-margin-left: 10vw;
+    margin-left: 10vw;
+
+
+}
+
+.contacts {
+    font-size: 1vw;
+}
+
+input {
+size-adjust: 1vw;
+}
+
+/* The code to apply animation to */
+
+button:hover {
+    animation-name: icons;
+    animation-timing-function: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  /* The animation code */
+
+  @keyframes icons {
+    0% {
+      transform: scale(1);
+      filter: hue-rotate(90deg);
+    }
+    50% {
+      transform: scale(1.2);
+      filter: hue-rotate(180deg);
+    }
+    100% {
+      transform: scale(1);
+      filter: hue-rotate(360deg);
+  }
 }
