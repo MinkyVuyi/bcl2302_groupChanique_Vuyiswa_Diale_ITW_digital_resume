@@ -164,7 +164,6 @@ button {
     border-radius: 10%;
 }
 
-
 button:hover {
     background-color:darkcyan;
     border: none;
@@ -239,4 +238,9 @@ font-size: 1vw;
 
 .contacts {
     font-size: 1vw;
+}
+
+.skilly {
+    background-color: deepskyblue;
+    flex: 1;
 }
