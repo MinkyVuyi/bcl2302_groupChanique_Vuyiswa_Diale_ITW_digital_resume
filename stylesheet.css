@@ -155,6 +155,7 @@ footer {
 .msg {
     padding-left: -2vw;
     margin-left: 1.5vw;
+    width: 10vw;
 }
 
 button {
@@ -188,7 +189,7 @@ label {
 
 .form {
     margin-top: 3vw;
-    size: 2vw;
+    size: 5vw;
 }
 
 .form-flex {
@@ -236,19 +237,6 @@ margin-left: 3vw;
 font-size: 1vw;
 }
 
-.Q {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10vw;
-
-
-}
-
 .contacts {
     font-size: 1vw;
 }
-
-
-
