@@ -192,7 +192,10 @@ a {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
+    color: navy;
 }
+
+/*Used to distinguish links from other fonts in the document.*/
 
 label {
     display: inline-block;
@@ -206,6 +209,7 @@ label {
     size: 5vw;
 }
 
+/*CSS grid and flexbox used*/
 .form-flex {
     display: flex;
     flex-direction: row;
@@ -223,7 +227,6 @@ label {
     justify-content: center;
     margin-bottom: -2vw;
     margin-left: 2vw;
-
 }
 
 .flex {
