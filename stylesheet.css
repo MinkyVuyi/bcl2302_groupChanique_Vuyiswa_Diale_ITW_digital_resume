@@ -50,9 +50,43 @@ nav {
     padding-bottom: 2vw;
 }
 
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+    nav {
+        font-size: 3.5vw;
+    }
+
+    /*Mobile Screen*/
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    .contacts {
+        font-size: 3.5vw;
+    }
+
+    /*Tablet Screen*/
+}
+
+
 .contacts {
     margin-left: 30vw;
 }
+
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+    .contacts {
+        font-size: 3vw;
+    }
+
+    /*Mobile Screen*/
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    .contacts {
+        font-size: 2.5vw;
+    }
+
+    /*Tablet Screen*/
+}
+
 
 .intro {
     font-size: 1.2vw;
@@ -61,6 +95,23 @@ nav {
     margin-top: -7vw;
     padding-bottom: 2vw;
 }
+
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+    .intro {
+        font-size: 2vw;
+    }
+
+    /*Mobile Screen*/
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    .intro {
+        font-size: 2vw;
+    }
+
+    /*Tablet Screen*/
+}
+
 
 h1 {
     margin-left: 30%;
@@ -84,6 +135,7 @@ h1 {
     .container {
         display: flex;
         flex-direction: column;
+        font-size: 2vw;
     }
 
     /*Mobile Screen*/
@@ -115,6 +167,7 @@ main {
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
     main {
         background-color: skyblue;
+        font-size: 2.5vw;
     }
 
     /*Tablet Screen*/
@@ -136,6 +189,7 @@ section {
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
     section {
         background-color: skyblue;
+        font-size: 2.5vw;
     }
 
     /*Tablet Screen*/
@@ -146,14 +200,14 @@ footer {
     background-color: rgb(43, 171, 221);
     padding-top: 1.5vw;
     text-align: center;
-    font-size: 1.5vw;
     padding-bottom: 2vw;
-    font-weight: bold;
 }
 
 @media only screen and (min-width: 350px) and (max-width: 700px) {
     footer {
         background-color: rgb(242, 85, 111);
+        font-size: 1.5vw;
+        font-weight: bold;
     }
 
     /*Mobile Screen*/
@@ -162,6 +216,8 @@ footer {
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
     footer {
         background-color: cadetblue;
+        font-size: 1vw;
+        font-weight: bold;
     }
 
     /*Tablet Screen*/
@@ -200,8 +256,7 @@ a {
 label {
     display: inline-block;
     width: 5%;
-    margin: 1%;
-    text-align: right;
+    margin-left: 1.5vw;
 }
 
 .form {
@@ -271,6 +326,7 @@ h4 {
 @media only screen and (min-width: 350px) and (max-width: 700px) {
     .skilly {
         background-color: rgb(246, 150, 166);
+        font-size: 2vw;
     }
 
     /* Mobile Screen*/
@@ -279,7 +335,24 @@ h4 {
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
     .skilly {
         background-color: skyblue;
+        font-size: 2vw;
     }
 
     /*Tablet Screen*/
 }
+
+/* The animation code */
+@keyframes animatedButton {
+ 
+    0% {
+        
+    }
+
+  }
+  
+  /* The element to apply the animation to */
+ i {
+   size: 5vw;
+    animation-name: animatedButton;
+    animation-duration: 4s;
+  }
