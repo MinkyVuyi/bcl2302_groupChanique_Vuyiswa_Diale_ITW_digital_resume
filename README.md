@@ -4,7 +4,7 @@
 
 **Author:** Vuyiswa Diale
 
-**List of Project used:** Visual Studio Code, Github, Font-Awesome (for icons Figma (https://www.figma.com/file/lyJ7JtmRpPHUMmxhV37pXD/Vuyiswa-Diale-Wireframe-ITW9?node-id=0-1&t=TIXoRigZF8TR7wZz-0)
+**List of Project used:** Visual Studio Code, Github, Font-Awesome (for icons) and Figma (https://www.figma.com/file/lyJ7JtmRpPHUMmxhV37pXD/Vuyiswa-Diale-Wireframe-ITW9?node-id=0-1&t=TIXoRigZF8TR7wZz-0)
 
 **Brief description of project:** 
 
