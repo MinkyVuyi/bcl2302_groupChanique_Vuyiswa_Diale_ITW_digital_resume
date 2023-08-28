@@ -3,7 +3,7 @@ import React from 'react';
 function Skills() {
   return (
     <div className="skilly">
-      <h2 id="skills">Skills</h2>
+      <h3 id="skills">Skills</h3>
 
       <div>
         <h4>Soft Skills and Hard Skills</h4>
@@ -55,7 +55,6 @@ function Skills() {
         <h5>Text and Code Editors:</h5>
         <ul>
           <li>Visual Studio Code.</li>
-          <li>Atom.</li>
         </ul>
       </div>
     </div>

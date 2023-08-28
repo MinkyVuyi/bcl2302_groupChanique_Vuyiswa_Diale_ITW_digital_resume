@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <div className="education">
       <div>
-        <h5>Education</h5>
+        <h3>Education</h3>
         <ul>
           <li>2023/Feb (current): Intro to Web at <a href="https://www.codespace.co.za/" target="_blank" rel="noopener noreferrer">CodeSpace Academy</a></li>
           <li>2023/Jan - 2023/Jan: Computer Literacy and Basic Computer Skills for Productivity</li>
@@ -21,7 +21,7 @@ const Education = () => {
       </div>
 
       <div>
-        <h5>Certification</h5>
+        <h3>Certification</h3>
         <ul>
           <li>2023/Jan: Computer Literacy and Basic Computer Skills for Productivity.</li>
           <li>2022/Nov: Programming Fundamentals.</li>

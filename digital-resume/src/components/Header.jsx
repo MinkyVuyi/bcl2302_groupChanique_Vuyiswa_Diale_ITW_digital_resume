@@ -1,23 +1,36 @@
-import React from 'react';
-import Contacts from './Contacts'; 
-import Navbar from './Navbar'; 
+import React from "react";
+import Contacts from "./Contacts";
 
 function Header() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header>
-      <Navbar />
+      <nav>
+        <button onClick={() => scrollToSection('education')}>
+          <p>Education</p>
+        </button>
+        <button onClick={() => scrollToSection('certification')}>
+          <p>Certification</p>
+        </button>
+        <button onClick={() => scrollToSection('experience')}>
+          <p>Experience</p>
+        </button>
+        <button onClick={() => scrollToSection('skills')}>
+          <p>Skills</p>
+        </button>
+        <button onClick={() => scrollToSection('contacts')}>
+          <p>Contact Details</p>
+        </button>
+      </nav>
+
       <h1>Vuyiswa Diale</h1>
-
       <p className="career">Software Engineering Student</p>
-
-      <div className="profile">
-        <picture>
-          <source media="(max-width: 500px)" srcSet="./images/Vuyiswa1.png" />
-          <source media="(max-width: 1000px)" srcSet="./images/Vuyiswa2.png" />
-          <img src="./images/Vuyiswa.png" alt="Vuyiswa" />
-        </picture>
-      </div>
-
       <Contacts />
 
       <div className="intro">

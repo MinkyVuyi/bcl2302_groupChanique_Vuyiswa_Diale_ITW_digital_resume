@@ -10,7 +10,8 @@ header {
 @media only screen and (max-width: 350px) {
   header {
     background-image: url(https://media2.giphy.com/media/ITRemFlr5tS39AzQUL/200w.gif?cid=82a1493b8qi6ls1srt3qt6medwr9o2qldfw7hhodg3ooxl3n&rid=200w.gif&ct=g);
-    background-position: right;
+    background-position: center;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
   }
 }
@@ -18,8 +19,9 @@ header {
 /* Tablet Screen */
 @media only screen and (min-width: 351px) and (max-width: 700px) {
   header {
-    background-image: url(https://media2.giphy.com/media/ITRemFlr5tS39AzQUL/200w.gif?cid=82a1493b8qi6ls1srt3qt6medwr9o2qldfw7hhodg3ooxl3n&rid=200w.gif&ct=g);
-    background-position: right;
+    background-image: url(https://thumbs.dreamstime.com/b/abstract-polygonal-background-modern-wallpaper-cadet-blue-vector-illustration-style-colorful-d-triangles-177062229.jpg);
+    background-position: center;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
   }
 }
@@ -28,12 +30,13 @@ header {
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
   header {
     background-image: url(https://thumbs.dreamstime.com/b/abstract-polygonal-background-modern-wallpaper-cadet-blue-vector-illustration-style-colorful-d-triangles-177062229.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 
-
 body {
-  background-color: grey;
+  background-color: rgb(141, 190, 193);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -46,57 +49,67 @@ nav {
   nav {
       font-size: 3.5vw;
   }
-
   /*Mobile Screen*/
 }
-/* Normal Laptop Screen */
+
+
 .contacts {
-  margin-left: 30vw;
+  font-size: 1.5vw;
+  color: rgb(3, 146, 186);
+  font-weight: bold;
+  margin-right: 30vw;
 }
 
 /* Tablet Screen */
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
   .contacts {
-    margin-left: 20vw;
-    font-size: 2.5vw;
+    margin-left: 40vw;
+    margin-right: 15vw; /* Reduce right margin */
+    font-size: 2vw;
   }
 }
 
 /* Mobile Screen */
 @media only screen and (max-width: 700px) {
   .contacts {
-    margin-left: 10vw;
-    font-size: 3vw;
+    margin-left: 40vw;
+    margin-right: 15vw; /* Reduce right margin further */
+    font-size: 2vw;
   }
 }
 
+.icons {
+  display: flex;
+  gap: 1rem; /* Adjust the space between icons as needed */
+}
+
+
 .intro {
-  font-size: 1.2vw;
-  margin-left: 30vw;
-  margin-right: 10vw;
-  margin-top: -7vw;
+  font-size: 1.5vw; /* Adjust font size for smaller screens */
+  margin-left: 30vw; /* Move intro more to the right */
+  margin-right: 2vw;
+  margin-top: 5vw;
   padding-bottom: 2vw;
 }
 
 /* Tablet Screen */
-@media only screen and (min-width: 701px) and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .intro {
-    font-size: 2vw;
-    margin-left: 20vw;
-    margin-right: 10vw;
-    margin-top: -7vw;
+    font-size: 1.5vw; /* Adjust font size for smaller screens */
+    margin-right: 5vw; /* Move intro more to the right */
+    margin-top: 10vw;
   }
 }
 
 /* Mobile Screen */
 @media only screen and (max-width: 700px) {
   .intro {
-    font-size: 2vw;
-    margin-left: 10vw;
-    margin-right: 5vw;
-    margin-top: -5vw;
+    font-size: 1.5vw; /* Adjust font size for smaller screens */
+    margin-left: 25vw; /* Move intro more to the right */
+    margin-top: 10vw;
   }
 }
+
 
 h1 {
   margin-left: 30%;
@@ -225,10 +238,6 @@ button:hover {
   border: none;
 }
 
-.contacts {
-  font-size: 1.5vw;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -298,10 +307,6 @@ h4 {
   font-size: 1vw;
 }
 
-.contacts {
-  font-size: 1vw;
-}
-
 /*Used to style skills*/
 .skilly {
   background-color: rgb(105, 185, 217);
@@ -324,20 +329,4 @@ h4 {
   }
 
   /*Tablet Screen*/
-}
-
-/* The animation code */
-@keyframes animatedButton {
-
-  0% {
-      
-  }
-
-}
-
-/* The element to apply the animation to */
-i {
- size: 5vw;
-  animation-name: animatedButton;
-  animation-duration: 4s;
 }

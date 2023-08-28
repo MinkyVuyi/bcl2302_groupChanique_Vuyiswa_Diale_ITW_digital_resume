@@ -1,5 +1,4 @@
 import React from 'react';
-import { Typography, Link, Select, FormControl, InputLabel, MenuItem, TextField, Button, Grid, Container } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -8,34 +7,26 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <Typography variant="h3" id="contacts" sx={{ mt: 3 }}>
+        <h3 id="contacts" style={{ marginTop: '1.5rem' }}>
           Contact Details
-        </Typography>
+        </h3>
         <div>
-          <Grid container alignItems="center" spacing={2}>
-            <Grid item>
-              <a href="https://www.linkedin.com/in/vuyiswa-diale-a62aaa267/" target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon />
-              </a>
-            </Grid>
-            <Grid item>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <InstagramIcon />
-              </a>
-            </Grid>
-            <Grid item>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <div className="iconsy" style={{ display: 'flex', gap: '1rem' }}>
+            <a href="https://www.linkedin.com/in/vuyiswa-diale-a62aaa267/" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <InstagramIcon />
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
               <GitHubIcon fontSize="large" />
-              </a>
-            </Grid>
-          </Grid>
+            </a>
+          </div>
         </div>
 
-        <Typography variant="h3" sx={{ mt: 3 }}>
-          Contact Form
-        </Typography>
+        <h3 style={{ marginTop: '1.5rem' }}>Contact Form</h3>
         <div className="form">
-          <form action="https://formsubmit.co/dialevuyiswa@gmail.com" method="POST" sx={{ mt: 2 }}>
+          <form action="https://formsubmit.co/dialevuyiswa@gmail.com" method="POST" style={{ marginTop: '1rem' }}>
             <div>
               <label htmlFor="subject">Subject</label>
               <select id="subject" name="subject" required>
@@ -61,9 +52,9 @@ const Footer = () => {
               <input type="email" id="email" name="email" placeholder="Email" required />
             </div>
 
-            <textarea id="message" name="message" placeholder="Message" rows="4" sx={{ mt: 2 }}></textarea>
+            <textarea id="message" name="message" placeholder="Message" rows="4" style={{ marginTop: '1rem' }}></textarea>
 
-            <button className="submission" type="submit" sx={{ mt: 2 }}>
+            <button className="submission" type="submit" style={{ marginTop: '1rem' }}>
               Submit
             </button>
           </form>
