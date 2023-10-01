@@ -221,11 +221,6 @@ footer {
   /*Tablet Screen*/
 }
 
-.msg {
-  padding-left: -2vw;
-  margin-left: 1.5vw;
-  width: 10vw;
-}
 
 button {
   font-size: 1vw;
@@ -247,44 +242,42 @@ a {
 
 /*Used to distinguish links from other fonts in the document.*/
 
-label {
-  display: inline-block;
-  width: 5%;
-  margin-left: 1.5vw;
+/* Center the iconsy */
+.iconsy {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* Horizontally center the icons */
+  margin-top: 1rem; /* Add some space from the top */
 }
 
+/* Center the contact form */
 .form {
-  margin-top: 3vw;
-  size: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the form */
+  margin-top: 2rem; /* Add some space from the top */
 }
 
-/*CSS grid and flexbox used*/
-.form-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -3vw;
-  grid-template-rows: auto;
-  grid-template-columns: 0.5fr 1fr;
+/* Media query for tablets */
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .iconsy {
+    margin-top: 2rem; /* Adjust spacing for tablets */
+  }
+  .form {
+    margin-top: 3rem; /* Adjust spacing for tablets */
+  }
 }
 
-.flex-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -2vw;
-  margin-left: 2vw;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1vw;
-  padding-right: 2vw;
+/* Media query for mobile screens */
+@media only screen and (max-width: 700px) {
+  .iconsy {
+    flex-direction: column; /* Stack icons vertically on mobile */
+    align-items: center; /* Horizontally center icons on mobile */
+    margin-top: 1.5rem; /* Adjust spacing for mobile */
+  }
+  .form {
+    margin-top: 2rem; /* Adjust spacing for mobile */
+  }
 }
 
 h2 {
